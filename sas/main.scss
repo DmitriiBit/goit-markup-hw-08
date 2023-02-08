@@ -1,0 +1,38 @@
+@import "./utils/breakpoints";
+@import "./utils/fonts";
+@import "./utils/mixins";
+@import "./utils/placeholders";
+@import "./utils/variabels";
+@import "./utils/visually-hidden";
+
+
+
+
+
+@import "./base/common";
+@import "./base/normalaize";
+
+@import "./components/logo";
+@import "./components/titel";
+@import "./components/item-social";
+@import "./components/modal";
+@import "./components/buttons";
+@import "./components/card-set";
+@import "./components/card-set__overley";
+@import "./components/menu";
+
+
+@import "./layot/container";
+@import "./layot/hero";
+@import "./layot/nav";
+@import "./layot/contacts";
+@import "./layot/advantage";
+@import "./layot/text";
+@import "./layot/skils";
+@import "./layot/team";
+@import "./layot/client";
+@import "./layot/footer";
+@import "./layot/footer_logo";
+@import "./layot/address";
+@import "./layot/join";
+@import "./layot/work-list";

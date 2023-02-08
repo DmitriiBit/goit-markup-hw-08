@@ -1,0 +1,21 @@
+.logo{
+    @include centeredFlex;
+   
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+    @extend %logoFont;
+    text-decoration: none;
+    color: var(--accent-color);
+    transition-property: color;
+    @extend %transition;
+    &:hover,
+    :focus{
+       color: var(--active-link-color);
+    }
+ }
+ 
+ .web{ 
+   color: var(--active-link-color);
+   @extend %logoFont;
+ }

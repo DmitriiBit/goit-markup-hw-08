@@ -1,0 +1,13 @@
+@mixin centeredFlex ($type: flex){
+    display: $type;
+    
+}
+
+@mixin textFont ($weight, $size){
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: $weight;
+    font-size: $size;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+}

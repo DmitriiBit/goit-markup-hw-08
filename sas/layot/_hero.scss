@@ -1,0 +1,24 @@
+.hero{
+    max-width: 1600px;
+    background-image:url(../img/Img\ Overlay.png), url(../img/Img.jpg);
+    background-repeat: no-repeat;
+     background-color: var(--bg-color);
+     padding: 200px 0;
+     background-size: cover;
+     background-position: 50% 50%;
+     margin-left: auto;
+     margin-right: auto;
+
+     
+
+    
+
+    @media screen and (min-width: 1600px) {
+      max-width: 1600px;
+    }
+  }
+  .hero__box{
+    
+     text-align: center;
+     padding: 0;
+  }

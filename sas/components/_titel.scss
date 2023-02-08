@@ -1,0 +1,69 @@
+
+ .advantages__titel{
+    margin-bottom: 10px;
+    @include textFont (700px, 14px );
+    
+    text-transform: uppercase;
+    color: var(--accent-color);
+    @media screen and (max-width: 767px) {
+        width: 450px;
+        text-align: center;
+     }
+}
+
+
+.team__titel{
+    margin-bottom: 50px;
+    @include textFont (500px, 36px );
+    line-height: 42px;
+    text-align: center;
+    color: var(--accent-color);
+
+}
+.team__titel--name{
+    @include textFont (500px, 16px );
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+    margin-bottom: 10px;
+}
+
+.client__titel{
+    @include textFont (700px, 36px );
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+    margin-bottom: 50px;
+}
+
+.hero__title{
+    @include textFont (900px, 44px );
+    text-align: center;
+    width: 696px;
+    color: var(--primary-bg-color);
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+ .skils__titel{
+    @include textFont (700, 36px );
+   line-height: 42px;
+   text-align: center;
+   color: var(--accent-color);
+   margin-bottom: 50px;
+
+   @media screen and (max-width: 480px) {
+    display: none;
+   
+ }
+   }

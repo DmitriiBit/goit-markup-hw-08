@@ -1,0 +1,57 @@
+.connection{
+    // @include centeredFlex();
+   padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0; 
+   margin-right: 0;
+   margin-left: auto;
+   font-weight: 500;
+   
+ }
+ .contact__item:not(:last-child){
+   margin-right: 30px;
+ }
+
+ .contact{
+    @include centeredFlex();
+    align-items: center;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+    padding-top: 34px;
+    padding-bottom: 34px;
+   
+    &:hover ,
+    &:focus {
+        color: var(--active-link-color );
+       
+    }
+    &:hover svg,
+    &:focus svg{
+        color: var(--active-link-color ) ;
+        fill: var(--active-link-color ) ;
+    }
+ }
+ 
+ .contact__mail-svg{
+   width: 16px;
+   height: 12px;
+   margin-right: 10px;
+   fill: var(--primary-text-color);
+   @extend %transition;
+    &:hover,
+    &:focus{
+        fill: var(--active-link-color ) ;
+    }
+ }
+ .contact__phone-svg{
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: var(--primary-text-color);
+    @extend %transition;
+    &:hover,
+    &:focus{
+        fill: var(--active-link-color ) ;
+    }
+  }

@@ -1,0 +1,55 @@
+.menu-button{
+    position: absolute;
+    
+    right: 15px;
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    @extend %transition;
+    &:hover svg,
+    &:focus svg{
+        color: var(--active-link-color ) ;
+        fill: var(--active-link-color ) ;
+    }
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+  
+   }
+
+
+   
+
+   .menu-button .icon-menu{
+    display: none;
+   }
+   
+
+   .menu-button.is-open .icon-menu{
+    display: block;
+   
+   }
+   .menu-button.is-open .icon-cross{
+    display: none;
+   }
+
+   .menu-container{
+    
+    background-color: var(--primary-bg-color);
+    &.is-open{
+        display: block;
+    }
+
+    @media screen and (max-width: 767px) {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding-top: 48px;
+        padding-bottom: 24px;
+        padding-left: 40px;
+    }
+   }

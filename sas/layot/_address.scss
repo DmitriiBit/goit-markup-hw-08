@@ -1,0 +1,29 @@
+.address{
+    
+    @extend %textFont;
+    color:  var(--primary-bg-color);
+    @extend %transition;
+    &:hover,
+    &:focus{
+        color: var(--active-link-color);
+    }
+
+    @media screen and( min-width: 365px){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+
+    
+}
+.footer__contact{
+    @extend %textFont;
+    color: rgba(255, 255, 255, 0.6);;
+    @extend %transition;
+    &:hover,
+    &:focus{
+        color: var(--active-link-color);
+    }
+    
+}

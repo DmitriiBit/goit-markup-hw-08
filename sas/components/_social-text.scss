@@ -1,0 +1,44 @@
+.social-text{
+    @include centeredFlex();
+    align-items: center;
+    width: 100%;
+    margin-top: 64px;
+    padding-bottom: 48px;
+    
+}
+.social-text__list{
+    margin-right: 20px;
+   
+}
+
+
+
+
+.social-text__icon{
+    width: 100%;
+    @include centeredFlex();
+    align-items: center;
+    @include textFont (500px, 18px );
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: var(--active-link-color);
+    transition-property: background-color, fill;
+    @extend %transition;
+  
+}
+
+
+
+.item-social__icon:hover,
+.item-social__icon:hover
+{
+    background-color: var(--active-link-color);
+    fill: var(--primary-bg-color);
+}
+
+.social__img{
+    
+   
+    margin-right: 7px;
+   
+}

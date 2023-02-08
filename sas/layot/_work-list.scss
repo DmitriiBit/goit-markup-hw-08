@@ -1,0 +1,33 @@
+.work-list{
+    
+    @include centeredFlex();
+    flex-wrap: wrap;
+    
+    min-width: 73px;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 50px;
+    border-radius: 4px;
+    @media screen and (min-width: 768px){
+        @include centeredFlex();
+        justify-content: center;
+    }
+}
+
+.work-list .item{
+    
+  
+    margin-right: 8px;
+    margin-bottom: 15px;
+    &:nth-child(4), &:nth-child(5){
+            
+        margin-bottom: 0;
+    }
+
+    @media screen and (min-width: 768px){
+        
+        
+        margin-right: 8px;
+        margin-bottom: 0;
+    }
+}
