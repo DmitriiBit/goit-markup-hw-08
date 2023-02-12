@@ -1,7 +1,7 @@
 header{
   max-width: 1600px;
   position: relative;
-   //  @include centeredFlex();
+    @include centeredFlex();
  }
  .site-nav{
   
@@ -11,6 +11,10 @@ header{
  }
 
  .nav{
+
+  @media screen and (max-width: 767px){
+    margin-bottom: 306px;
+  }
   @media screen and (min-width: 768px){
     display: flex;
   }
