@@ -1,0 +1,17 @@
+.header-social__list{
+    display: flex;
+    max-width: 296px;
+}
+
+.header-social__item{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+letter-spacing: 0.02em;
+color: #2196F3;
+}
+.header-social__item:not(:last-child){
+    margin-right: 20px;
+}

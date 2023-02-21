@@ -1,9 +1,7 @@
 .logo{
     @include centeredFlex;
    
-    padding-top: 24px;
-    padding-bottom: 25px;
-    margin-right: 93px;
+   
     @extend %logoFont;
     text-decoration: none;
     color: var(--accent-color);
@@ -13,9 +11,38 @@
     :focus{
        color: var(--active-link-color);
     }
+    @media screen and (min-width:768px) {
+      padding-top: 24px;
+      padding-bottom: 25px;
+      margin-right: 92px;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: 0.03em;
+      
+
+    }
+    @media screen and (min-width:1200px) {
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 31px;
+  }
  }
  
  .web{ 
    color: var(--active-link-color);
    @extend %logoFont;
+   @media screen and (min-width:768px) {
+      
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: 0.03em;
+
+    }
+    @media screen and (min-width:1200px) {
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 31px;
+  }
  }

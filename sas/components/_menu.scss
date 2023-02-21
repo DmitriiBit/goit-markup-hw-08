@@ -1,5 +1,4 @@
-.menu-button{
-    position: absolute;
+.button-menu__open{
     
     right: 15px;
     display: inline-flex;
@@ -13,43 +12,62 @@
         color: var(--active-link-color ) ;
         fill: var(--active-link-color ) ;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width:768px) {
         display: none;
     }
-  
+   
    }
 
 
    
 
-   .menu-button .icon-menu{
-    display: none;
-   }
-   
 
    .menu-button.is-open .icon-menu{
-    display: block;
+    display: none;
    
    }
-   .menu-button.is-open .icon-cross{
-    display: none;
-   }
+   
 
-   .menu-container{
-    
-    background-color: var(--primary-bg-color);
-    &.is-open{
-        display: block;
-    }
-
-    @media screen and (max-width: 767px) {
-        display: none;
+   .mobail-menu{
+       
         position: absolute;
-        top: 100%;
+        top: 0;
         left: 0;
         width: 100%;
-        padding-top: 48px;
-        padding-bottom: 24px;
-        padding-left: 40px;
+        height: 100vh;
+        overflow: auto;
+        opacity: 0;
+        visibility: hidden;
+        background-color: var(--primary-bg-color);
+    &.is-open{
+        opacity: 1;
+        visibility: visible;
+        max-width: 480px;
+        pointer-events: auto;
+        
+    }
+    transition: opacity 250ms linear, visibility 250ms linear;
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+
+   }
+
+   
+
+   .mobail-menu__close-btn{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    line-height: 0;
+    @extend %transition;
+    &:hover svg,
+    &:focus svg{
+        color: var(--active-link-color ) ;
+        fill: var(--active-link-color ) ;
     }
    }

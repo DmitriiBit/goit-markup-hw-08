@@ -1,15 +1,46 @@
 .connection{
-    // @include centeredFlex();
-   padding-left: 0;
-    margin-top: 0;
-    margin-bottom: 0; 
-   margin-right: 0;
-   margin-left: auto;
-   font-weight: 500;
+  display: block;
+  @media  screen and (min-width:768px) {
+    padding-left: 0;
+     margin-top: 0;
+     margin-bottom: 0; 
+    margin-right: 0;
+    margin-left: auto;
+    font-weight: 500;
+  }
    
+   @media screen and (min-width:1200px) {
+    display: flex;
+    align-items: center;
+    margin-left: 295px;
+   }
+}
+
+
+ .contact__item{
+  
+  @media screen and (min-width:768px) and (max-width:1199px) {
+    padding: 0;
+    &:not(:last-child){
+      margin-bottom: 10px;
+      
+    }
+  }
+
+  @media screen and (min-width:1200px) {
+    &:not(:last-child){
+      margin-right: 30px;
+    }
+    
+  }
  }
- .contact__item:not(:last-child){
-   margin-right: 30px;
+
+ .contact__item-phone{
+  margin-bottom: 32px;
+ }
+
+ .contact__item-mail{
+  margin-bottom: 64px;
  }
 
  .contact{
@@ -18,8 +49,7 @@
     line-height: 16px;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
-    padding-top: 34px;
-    padding-bottom: 34px;
+    
    
     &:hover ,
     &:focus {
@@ -30,10 +60,19 @@
     &:focus svg{
         color: var(--active-link-color ) ;
         fill: var(--active-link-color ) ;
+    } 
+
+    @media screen and (min-width:1200px) {
+      padding-top: 32px;
+      padding-bottom: 32px;
     }
- }
+
+  }
  
  .contact__mail-svg{
+  @media screen and (max-width:767px) {
+    display: none;
+  }
    width: 16px;
    height: 12px;
    margin-right: 10px;
@@ -45,6 +84,9 @@
     }
  }
  .contact__phone-svg{
+  @media screen and (max-width:767px) {
+    display: none;
+  }
     width: 10px;
     height: 16px;
     margin-right: 10px;
@@ -54,4 +96,34 @@
     &:focus{
         fill: var(--active-link-color ) ;
     }
+  }
+
+  .phone{
+    @media screen and (max-width:767px) {
+      font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+    /* identical to box height */
+
+    letter-spacing: 0.02em;
+
+    color: #2196F3;
+    margin-bottom: 32px;
+    }
+    
+  }
+
+  .mail{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+
+    color: #757575;
+    margin-bottom: 64px;
+
   }

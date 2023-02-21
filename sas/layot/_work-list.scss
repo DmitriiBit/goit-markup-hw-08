@@ -2,32 +2,28 @@
     
     @include centeredFlex();
     flex-wrap: wrap;
-    
-    min-width: 73px;
-    padding-left: 0;
     margin-top: 0;
     margin-bottom: 50px;
     border-radius: 4px;
+    width: 346px;
     @media screen and (min-width: 768px){
+        width: 585px;
         @include centeredFlex();
         justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
 .work-list .item{
-    
-  
+     min-width: 73px;
     margin-right: 8px;
     margin-bottom: 15px;
     &:nth-child(4), &:nth-child(5){
-            
         margin-bottom: 0;
     }
 
     @media screen and (min-width: 768px){
-        
-        
-        margin-right: 8px;
         margin-bottom: 0;
     }
 }

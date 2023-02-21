@@ -1,12 +1,13 @@
 .container{
     
+    
     padding-left: 15px;
     padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-
+    
     @media screen and (min-width: 480px) {
-        width: 480px;
+        width: 448px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     @media screen and (min-width: 768px) {
@@ -14,6 +15,29 @@
     }
 
     @media screen and (min-width: 1200px) {
-        width: 1200px;
+        width: 1170px;
     }
 }
+
+.header__container{
+    
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+   
+    
+  
+}
+
+.mobail-menu__container{
+    position: relative;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-left: 40px;
+    
+    @media screen and (min-width:768px) {
+        display: none;
+    }
+   }
