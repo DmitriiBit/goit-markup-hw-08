@@ -496,7 +496,7 @@ template {
   .logo {
     padding-top: 24px;
     padding-bottom: 25px;
-    margin-right: 92px;
+    margin-right: 88px;
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
@@ -727,19 +727,24 @@ template {
   border-radius: 4px;
   padding: 40px;
 }
+@media screen and (max-width: 479px) {
+  .modal {
+    max-width: 370px;
+  }
+}
 @media screen and (min-width: 480px) {
   .modal {
     position: absolute;
-    width: 450px;
+    width: 370px;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .modal {
-    width: 528px;
+    width: 448px;
   }
 }
 
@@ -852,10 +857,20 @@ textarea {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .check {
+    width: 435px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .icon-check {
@@ -1260,9 +1275,13 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+}
+@media screen and (max-width: 767px) {
+  .header__container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .mobail-menu__container {
@@ -1278,7 +1297,7 @@ textarea {
 }
 
 .hero {
-  max-width: 1600px;
+  max-width: 100%;
   background-image: url(../img/Img\ Overlay.png), url(../img/Img.jpg);
   background-repeat: no-repeat;
   background-color: var(--bg-color);
@@ -1307,15 +1326,6 @@ textarea {
   padding: 0;
 }
 
-.navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 @media screen and (max-width: 767px) {
   .nav {
     margin-bottom: 302px;
@@ -1323,13 +1333,14 @@ textarea {
 }
 @media screen and (min-width: 768px) {
   .nav {
+    width: 288px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-right: 96px;
+    margin-right: 90px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1427,12 +1438,13 @@ textarea {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-left: 295px;
+    margin-left: 312px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contact__item {
+    max-width: 148px;
     padding: 0;
   }
   .contact__item:not(:last-child) {
@@ -1450,7 +1462,13 @@ textarea {
 }
 
 .contact__item-mail {
+  width: 116px;
   margin-bottom: 64px;
+}
+@media screen and (min-width: 1200px) {
+  .contact__item-mail {
+    width: 162px;
+  }
 }
 
 .contact {
@@ -1460,7 +1478,9 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  line-height: 16px;
+  font-weight: 500px;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
@@ -1784,6 +1804,7 @@ textarea {
 }
 
 .team__item {
+  max-width: 450px;
   margin: 15px;
   background-color: var(--primary-bg-color);
   padding-bottom: 30px;
@@ -1918,6 +1939,8 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1927,6 +1950,8 @@ footer {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    padding-left: 76px;
+    padding-right: 89px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -2041,11 +2066,9 @@ footer {
 }
 
 .subscry {
-  width: 416px;
+  width: 100%;
   height: 50px;
   margin-bottom: 20px;
-  margin-right: auto;
-  margin-left: auto;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));

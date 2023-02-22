@@ -6,27 +6,25 @@
    padding: 0;
    
  }
- .navigation{
-  
-    @include centeredFlex();
-    align-items: center;
-    
- }
+ 
 
  .nav{
   @media screen and (max-width: 767px){
     margin-bottom: 302px;
   }
   @media screen and (min-width: 768px)  {
+    width: 288px;
     display: flex;
     align-items: center;
-    margin-right: 96px;
+    margin-right: 90px;
   }
   
   @media screen and (min-width:1200px) {
     margin-right: 0px;
   }
  }
+
+ 
 
  
 

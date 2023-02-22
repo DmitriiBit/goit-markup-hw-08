@@ -12,7 +12,7 @@
    @media screen and (min-width:1200px) {
     display: flex;
     align-items: center;
-    margin-left: 295px;
+    margin-left: 312px;
    }
 }
 
@@ -20,6 +20,7 @@
  .contact__item{
   
   @media screen and (min-width:768px) and (max-width:1199px) {
+    max-width: 148px;
     padding: 0;
     &:not(:last-child){
       margin-bottom: 10px;
@@ -35,18 +36,26 @@
   }
  }
 
+ 
+
  .contact__item-phone{
   margin-bottom: 32px;
  }
 
  .contact__item-mail{
+  width: 116px;
   margin-bottom: 64px;
+  @media screen and (min-width:1200px) {
+    width: 162px;
+  }
  }
 
  .contact{
     @include centeredFlex();
     align-items: center;
-    line-height: 16px;
+    font-weight: 500px;
+    font-size: 12px;
+    line-height: 14px;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
     
