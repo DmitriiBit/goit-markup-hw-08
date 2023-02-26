@@ -1186,7 +1186,7 @@ textarea {
 }
 
 .mobail-menu {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -1195,13 +1195,13 @@ textarea {
   opacity: 0;
   visibility: hidden;
   background-color: var(--primary-bg-color);
+  z-index: 10000;
   -webkit-transition: opacity 250ms linear, visibility 250ms linear;
   transition: opacity 250ms linear, visibility 250ms linear;
 }
 .mobail-menu.is-open {
   opacity: 1;
   visibility: visible;
-  max-width: 480px;
   pointer-events: auto;
 }
 @media screen and (min-width: 768px) {

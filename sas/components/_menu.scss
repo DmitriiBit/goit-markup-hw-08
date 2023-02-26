@@ -30,7 +30,7 @@
 
    .mobail-menu{
        
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         width: 100%;
@@ -39,10 +39,11 @@
         opacity: 0;
         visibility: hidden;
         background-color: var(--primary-bg-color);
+        z-index: 10000;
     &.is-open{
         opacity: 1;
         visibility: visible;
-        max-width: 480px;
+        // max-width: 480px;
         pointer-events: auto;
         
     }
