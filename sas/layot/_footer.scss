@@ -1,4 +1,5 @@
 footer{
+    width: 100%;
     margin: 0px  ;
     background-color: var(--bg-color);
     padding-top: 60px;
@@ -121,6 +122,8 @@ footer{
     outline-offset: 0;
     background-color: var(--bg-color);
     
+       
+
        @media screen and (min-width:768px) {
         width: 450px;
        }

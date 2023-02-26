@@ -1297,19 +1297,39 @@ textarea {
 }
 
 .hero {
-  max-width: 100%;
-  background-image: url(../img/Img\ Overlay.png), url(../img/Img.jpg);
+  max-width: 1600px;
+  background-image: url(../img/Img\ Overlay.png), url(/img/hero/Hero480.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
   background-color: var(--bg-color);
   padding: 200px 0;
-  background-size: cover;
   background-position: 50% 50%;
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (min-width: 1600px) {
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    max-width: 1600px;
+    background-image: url(../img/Img\ Overlay.png), url(/img/hero/hero480@2.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: url(../img/Img\ Overlay.png), url(/img/hero/hero768.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../img/Img\ Overlay.png), url(/img/hero/hero768@2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: url(../img/Img\ Overlay.png), url(/img/hero/hero1200.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../img/Img\ Overlay.png), url(/img/hero/hero1200@2x.jpg);
   }
 }
 
@@ -1846,6 +1866,8 @@ textarea {
 }
 
 .client__list {
+  margin-right: auto;
+  margin-left: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1918,6 +1940,7 @@ textarea {
 }
 
 footer {
+  width: 100%;
   margin: 0px;
   background-color: var(--bg-color);
   padding-top: 60px;

@@ -5,7 +5,8 @@
 }
 
 .client__list{
-    
+    margin-right: auto;
+    margin-left: auto;
     @include centeredFlex();
     margin-top: 0;
     margin-bottom: 0;
