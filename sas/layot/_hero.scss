@@ -1,7 +1,7 @@
 .hero{
      
      max-width: 1600px;
-     background-image:url(../img/Img\ Overlay.png), url(/img/hero/Hero480.jpg);
+     background-image:url(../img/Img\ Overlay.png), url(../img/hero/Hero480.jpg);
      background-size: cover;
      background-repeat: no-repeat;
      background-color: var(--bg-color);
@@ -14,28 +14,28 @@
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       
-        background-image:url(../img/Img\ Overlay.png), url(/img/hero/hero480@2.jpg);
+        background-image:url(../img/Img\ Overlay.png), url(../img/hero/hero480@2.jpg);
       }
 
      @media screen and (min-width:768px) {
-      background-image:url(../img/Img\ Overlay.png), url(/img/hero/hero768.jpg);
+      background-image:url(../img/Img\ Overlay.png), url(../img/hero/hero768.jpg);
       @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       
-        background-image:url(../img/Img\ Overlay.png), url(/img/hero/hero768@2x.jpg);
+        background-image:url(../img/Img\ Overlay.png), url(../img/hero/hero768@2x.jpg);
       }
      }
 
      @media screen and (min-width:1200px) {
-      background-image:url(../img/Img\ Overlay.png), url(/img/hero/hero1200.jpg);
+      background-image:url(../img/Img\ Overlay.png), url(../img/hero/hero1200.jpg);
       @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       
-        background-image:url(../img/Img\ Overlay.png), url(/img/hero/hero1200@2x.jpg);
+        background-image:url(../img/Img\ Overlay.png), url(../img/hero/hero1200@2x.jpg);
       }
      }
    }
