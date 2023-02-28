@@ -533,9 +533,6 @@ template {
 .advantages__titel {
   max-width: 270px;
   margin-bottom: 10px;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
   font-family: var(--primary-font);
   font-style: normal;
   font-weight: 700px;
@@ -549,6 +546,8 @@ template {
   .advantages__titel {
     width: 450px;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -1343,6 +1342,7 @@ textarea {
   margin-left: auto;
   margin-right: auto;
   padding: 0;
+  border-bottom: 1px solid #ECECEC;
 }
 
 @media screen and (max-width: 767px) {
@@ -1666,6 +1666,10 @@ textarea {
   }
 }
 
+.skils {
+  padding-top: 0;
+  padding-bottom: 94px;
+}
 @media screen and (max-width: 1200px) {
   .skils {
     display: none;
@@ -1683,7 +1687,6 @@ textarea {
   min-width: 73px;
   padding-left: 0;
   margin-top: 0;
-  margin-bottom: 50px;
   border-radius: 4px;
 }
 
@@ -1746,12 +1749,10 @@ textarea {
 .skils__card--decstop::after {
   position: absolute;
   content: "Десктопні додатки";
-  font-family: var(--primary-font);
-  font-style: normal;
-  font-weight: 700px;
+  font-family: roboto;
+  font-weight: 700;
   font-size: 14px;
-  line-height: 19px;
-  letter-spacing: 0.03em;
+  line-height: 16px;
   text-align: center;
   color: var(--primary-bg-color);
   text-transform: uppercase;
@@ -1762,12 +1763,10 @@ textarea {
 .skils__card--mobail::after {
   content: "Мобільні додатки";
   position: absolute;
-  font-family: var(--primary-font);
-  font-style: normal;
-  font-weight: 700px;
+  font-family: roboto;
+  font-weight: 700;
   font-size: 14px;
-  line-height: 19px;
-  letter-spacing: 0.03em;
+  line-height: 16px;
   text-align: center;
   color: var(--primary-bg-color);
   text-transform: uppercase;
@@ -1778,12 +1777,10 @@ textarea {
 .skils__card--disain::after {
   content: "Дизайнерські рішення";
   position: absolute;
-  font-family: var(--primary-font);
-  font-style: normal;
-  font-weight: 700px;
+  font-family: roboto;
+  font-weight: 700;
   font-size: 14px;
-  line-height: 19px;
-  letter-spacing: 0.03em;
+  line-height: 16px;
   text-align: center;
   color: var(--primary-bg-color);
   text-transform: uppercase;
@@ -1802,7 +1799,6 @@ textarea {
 }
 @media screen and (min-width: 1200px) {
   .team {
-    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1983,6 +1979,10 @@ footer {
   }
 }
 
+.footer__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .footer__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1999,6 +1999,7 @@ footer {
 @media screen and (min-width: 1200px) {
   .footer__list {
     display: block;
+    margin-bottom: 0;
   }
 }
 

@@ -1,24 +1,21 @@
 .skils{
+    padding-top: 0;
+    padding-bottom: 94px;
     @media screen and (max-width: 1200px) {
         display: none;
-       
+        
      }
 }
 
    
    .skils__list{
-       
        @include centeredFlex();
        gap: var(--card-set-gap);
        justify-content: center;
        min-width: 73px;
        padding-left: 0;
        margin-top: 0;
-       margin-bottom: 50px;
        border-radius: 4px;
-
-      
-   
    }
    
    
@@ -69,7 +66,10 @@
    .skils__card--decstop::after{
        position: absolute;
        content: "Десктопні додатки";
-       @include textFont (700px, 14px );
+       font-family: roboto;
+       font-weight: 700;
+       font-size: 14px;
+       line-height: 16px;
        text-align: center;
        color: var(--primary-bg-color);
        text-transform: uppercase;
@@ -80,7 +80,10 @@
    .skils__card--mobail::after{
        content: "Мобільні додатки";
        position: absolute;
-       @include textFont (700px, 14px );
+       font-family: roboto;
+       font-weight: 700;
+       font-size: 14px;
+       line-height: 16px;
        text-align: center;
        color: var(--primary-bg-color);
        text-transform: uppercase;
@@ -90,7 +93,10 @@
    .skils__card--disain::after{
        content: "Дизайнерські рішення";
        position: absolute;
-       @include textFont (700px, 14px );
+       font-family: roboto;
+       font-weight: 700;
+       font-size: 14px;
+       line-height: 16px;
        text-align: center;
        color: var(--primary-bg-color);
        text-transform: uppercase;

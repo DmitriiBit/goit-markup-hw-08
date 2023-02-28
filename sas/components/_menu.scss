@@ -40,10 +40,12 @@
         visibility: hidden;
         background-color: var(--primary-bg-color);
         z-index: 10000;
+        
+        
     &.is-open{
         opacity: 1;
         visibility: visible;
-        // max-width: 480px;
+        
         pointer-events: auto;
         
     }

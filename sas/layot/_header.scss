@@ -1,14 +1,18 @@
+
+
+
 .header{
+
   max-width: 1600px;
   position: relative;
   margin-left: auto;
   margin-right: auto;
-   padding: 0;
-   
+  padding: 0;
+  border-bottom: 1px solid  #ECECEC;
  }
  
 
- .nav{
+.nav{
   @media screen and (max-width: 767px){
     margin-bottom: 302px;
   }

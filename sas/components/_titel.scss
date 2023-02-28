@@ -2,16 +2,14 @@
  .advantages__titel{
     max-width: 270px;
     margin-bottom: 10px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
     @include textFont (700px, 14px );
-    
     text-transform: uppercase;
     color: var(--accent-color);
     @media screen and (max-width: 767px) {
         width: 450px;
         text-align: center;
+        margin-left: auto;
+        margin-right: auto;
      }
 }
 
