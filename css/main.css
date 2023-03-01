@@ -1223,7 +1223,11 @@ textarea {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   position: fixed;
-  bottom: 40px;
+  bottom: 60px;
+}
+
+.line {
+  width: 22px;
 }
 
 .mobail-menu__close-btn {
@@ -1243,7 +1247,7 @@ textarea {
 }
 
 .header-social__list {
-  max-width: 296px;
+  width: 256px;
   margin-right: 0;
   display: none;
 }
@@ -1265,15 +1269,17 @@ textarea {
   color: #2196F3;
 }
 
-.header-social__item:not(:last-child) {
-  margin-right: 20px;
+@media screen and (min-width: 480px) {
+  .header-social__item:not(:last-child) {
+    margin-right: 20px;
+  }
 }
-
 .line {
   fill: black;
 }
 
 .header-social__list-320 {
+  width: 256px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1654,13 +1660,13 @@ textarea {
   padding-top: 94px;
   padding-bottom: 0;
   padding-bottom: 60px;
-  margin: -15px;
 }
 
 .advantages__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: -15px;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -1673,11 +1679,22 @@ textarea {
 }
 
 .advantages__item {
-  max-width: 450px;
   margin: 15px;
+  max-width: 450px;
+}
+@media screen and (max-width: 767px) {
+  .advantages__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .advantages__item {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 768px) {
   .advantages__item {
+    width: 354px;
     -ms-flex-preferred-size: calc((100% - 60px) / 2);
         flex-basis: calc((100% - 60px) / 2);
   }
@@ -1705,6 +1722,11 @@ textarea {
   height: 120px;
   background-color: var(--button-bg-color);
   margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .advantages__icon {
+    width: 354px;
+  }
 }
 
 .advantages__icon-svg {
@@ -1870,7 +1892,6 @@ textarea {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: var(--button-bg-color);
-  margin: -15px;
 }
 @media screen and (min-width: 1200px) {
   .team {
@@ -1885,6 +1906,7 @@ textarea {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin: -15px;
 }
 @media screen and (min-width: 1200px) {
   .team__list {
@@ -1906,6 +1928,7 @@ textarea {
   .team__item {
     -ms-flex-preferred-size: calc((100% - 60px) / 2);
         flex-basis: calc((100% - 60px) / 2);
+    width: 339px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1932,10 +1955,10 @@ textarea {
 
 .client {
   padding-bottom: 94px;
-  margin: -15px;
 }
 
 .client__list {
+  margin: -15px;
   margin-right: auto;
   margin-left: auto;
   display: -webkit-box;
@@ -1946,6 +1969,13 @@ textarea {
   padding-left: 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+@media screen and (max-width: 479px) {
+  .client__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 @media screen and (min-width: 1200px) {
   .client__list {

@@ -1,5 +1,5 @@
 .header-social__list{
-    max-width: 296px;
+    width: 256px;
     margin-right: 0;
     display: none;
     @media screen and (min-width:480px) {
@@ -17,16 +17,19 @@ letter-spacing: 0.02em;
 color: #2196F3;
 }
 
-
-.header-social__item:not(:last-child){
-    margin-right: 20px;
+@media screen and (min-width:480px) {
+    .header-social__item:not(:last-child){
+        margin-right: 20px;
+    }
 }
+
 
 .line{
     fill: black;
 }
 
 .header-social__list-320{
+    width: 256px;
     display: flex;
     @media screen and (min-width:480px) {
         display: none;
