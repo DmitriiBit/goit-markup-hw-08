@@ -13,9 +13,6 @@
  
 
 .nav{
-  @media screen and (max-width: 767px){
-    margin-bottom: 302px;
-  }
   @media screen and (min-width: 768px)  {
     width: 288px;
     display: flex;
@@ -28,6 +25,11 @@
   }
  }
 
+ .nav-mobail{
+  position: fixed;
+  top: 40px;
+  
+ }
  
 
  
@@ -35,10 +37,8 @@
  .nav__label{
     @include centeredFlex();
     align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
     color: var(--accent-color);
-    @include textFont (500px, 16px );
+    // @include textFont (500px, 16px );
     line-height: 1.2;
     letter-spacing: 0.02em;
     text-decoration: none;
@@ -50,14 +50,22 @@
     &:hover,
     &:focus{
         color:var(--active-link-color);
-
+        
     }
 
-    @media screen and (max-width: 767px){
+    @media screen and (max-width: 479px){
+      @include textFont (500px, 35px )
+    }
+
+    @media screen and (min-width:480px) and (max-width: 767px){
       @include textFont (500px, 40px );
       line-height: 46.88px;
       letter-spacing: 2%;
       
+    }
+    @media screen and (min-width:768px) {
+      padding-top: 32px;
+      padding-bottom: 32px;
     }
  }
  .nav__label--active{
@@ -81,13 +89,17 @@
     }
     
     }
+    @media screen and (max-width:767px){
+      .nav__item:not(:last-child){
+        margin-bottom: 35px;}
+    }
+      
     
+        
+    @media screen and (min-width:768px) {
+      .nav__item:not(:last-child){
+        margin-right: 50px;}
+    }
      
-  .nav__item:not(:last-child){
-    margin-right: 50px;
-    // @media screen and (min-width: 480px){
-    // margin-bottom: 35px;
-    // }
-    
- }
+  
  
