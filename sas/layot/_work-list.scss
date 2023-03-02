@@ -1,15 +1,19 @@
 .work-list{
-    
+    max-width: 346px;
     @include centeredFlex();
     flex-wrap: wrap;
     margin-top: 0;
     margin-bottom: 50px;
     border-radius: 4px;
-    width: 346px;
+    
+    @media screen and (min-width:480px) {
+        min-width: 376px;
+    }
     @media screen and (min-width: 768px){
-        width: 585px;
+        min-width: 585px;
         @include centeredFlex();
         justify-content: center;
+        flex-wrap: nowrap;
         margin-left: auto;
         margin-right: auto;
     }

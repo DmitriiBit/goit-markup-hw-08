@@ -6,7 +6,8 @@
     &:hover,&:focus{
         color:var(--accent-color);
     }
-    
+    transition-property: color;
+    @extend %transition;
     min-width: 216px;
     border-radius: 4px;
 }
@@ -21,7 +22,8 @@
     border-radius: 4px;
     border: none;
     margin: 0;
-    
+    transition-property: color;
+    @extend %transition;
     &:hover,
     &:focus{
     color: var(--accent-color);
@@ -60,6 +62,7 @@
     border-radius: 4px;
     border: none;
     transition-property: color, background-color;
+    @extend %transition;
     &:focus, &:hover{
         background-color: var(--active-link-color);
         color: var(--primary-bg-color) ;

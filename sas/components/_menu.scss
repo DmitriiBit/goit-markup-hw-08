@@ -61,9 +61,15 @@
     position: fixed;
     bottom: 60px;
    }
-   .line{
-    width: 22px;
-   }
+   .line {
+    color:  rgba(33, 33, 33, 0.2);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 15px;
+    margin-right: 7px;
+    
+}
 
    .mobail-menu__close-btn{
     position: absolute;
