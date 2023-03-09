@@ -1264,6 +1264,11 @@ textarea {
   color: var(--active-link-color);
   fill: var(--active-link-color);
 }
+@media screen and (min-width: 480px) {
+  .mobail-menu__close-btn {
+    right: 30px;
+  }
+}
 
 .header-social__list {
   width: 256px;
@@ -1535,6 +1540,9 @@ textarea {
 
 @media screen and (max-width: 767px) {
   .nav__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  .nav__item-studia {
     margin-bottom: 35px;
   }
 }
