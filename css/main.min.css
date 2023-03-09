@@ -1072,7 +1072,7 @@ textarea {
     margin: 15px;
     -ms-flex-preferred-size: calc((100% - 60px) / 2);
         flex-basis: calc((100% - 60px) / 2);
-    width: 354px;
+    width: 352px;
   }
 }
 .card:hover, .card:focus {
