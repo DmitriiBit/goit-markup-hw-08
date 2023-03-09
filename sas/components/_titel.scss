@@ -61,18 +61,16 @@
     margin-left: auto;
     margin-right: auto;
 
-    @media screen and (min-width:404px) {
+    @media screen and (min-width:374px) {
         font-size: 26px;
     }
 
-    @media screen and (min-width:768px) {
-       width: 360px;
-    }
+    
 
     @media screen and (min-width:1200px) {
       font-size: 44px;
       line-height: 1.4;
-      width: 696px;
+    
     }
  }
 

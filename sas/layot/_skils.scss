@@ -66,13 +66,15 @@
    .skils__card--decstop::after{
        position: absolute;
        content: "Десктопні додатки";
-       font-family: roboto;
+       font-family: 'Roboto';
+       font-style: normal;
        font-weight: 700;
        font-size: 14px;
        line-height: 16px;
        text-align: center;
-       color: var(--primary-bg-color);
+       letter-spacing: 0.03em;
        text-transform: uppercase;
+       color: var(--primary-bg-color);
        transform: translate(70%, -40px);
    }
    

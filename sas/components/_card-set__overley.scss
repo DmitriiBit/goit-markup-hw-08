@@ -17,12 +17,18 @@
     &::after{
         position: absolute;
         content: "Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.";
-        @include textFont (400px, 16px );
-        line-height: 1.56;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        /* or 156% */
+        padding: 63px 24px;
+        letter-spacing: 0.03em;
         color: var(--primary-bg-color) ;
         top: 0;
         left: 0;
-        padding: 63px 24px;
+        
         transform: translatey(100%);
         transition: transform 250ms var(--time-transition-duration) ;
         

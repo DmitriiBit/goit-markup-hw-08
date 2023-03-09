@@ -16,6 +16,7 @@
 }   
   
 .card-set__item{
+  
     display: flex;
     @media screen and (max-width:767px) {
       &:not(:last-child){
@@ -46,19 +47,22 @@
 
     @media screen and (min-width: 1200px) {
       flex-basis: calc((100% - 7 * 15px) / 3);
-      width: 366px;
+      
    }
 
     
  }
    
    .card-set__portfolio{
-    @include textFont (700px, 18px );
-    margin-bottom: 4px;
+    font-family: 'Roboto';
     font-style: normal;
-    line-height: 2;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    /* or 200% */
     
     letter-spacing: 0.06em;
+    
     color: var(--title-text-color);
   
   }
@@ -76,7 +80,7 @@
   
 
    @media screen and (min-width: 768px) {
-     width: 354px;
+     width: 310px;
    }
 
    @media screen and (min-width: 1200px) {
