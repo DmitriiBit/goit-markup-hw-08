@@ -1083,6 +1083,7 @@ textarea {
   .card {
     -ms-flex-preferred-size: calc((100% - 105px) / 3);
         flex-basis: calc((100% - 105px) / 3);
+    width: 367px;
   }
 }
 
@@ -1150,10 +1151,9 @@ textarea {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 28px;
-  /* or 156% */
-  padding: 63px 24px;
+  padding: 24px 24px;
   letter-spacing: 0.03em;
   color: var(--primary-bg-color);
   top: 0;
@@ -1164,6 +1164,12 @@ textarea {
   transition: -webkit-transform 250ms var(--time-transition-duration);
   transition: transform 250ms var(--time-transition-duration);
   transition: transform 250ms var(--time-transition-duration), -webkit-transform 250ms var(--time-transition-duration);
+}
+@media screen and (min-width: 480px) {
+  .card-set__overley::after {
+    font-size: 18px;
+    padding: 63px 24px;
+  }
 }
 
 .card-set__item:hover .card-set__overley::after,
@@ -1704,6 +1710,11 @@ textarea {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .advantages {
+    padding-bottom: 94px;
+  }
+}
 
 .advantages__list {
   display: -webkit-box;
@@ -1941,6 +1952,14 @@ textarea {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: var(--button-bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .team__list {
@@ -2004,6 +2023,17 @@ textarea {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   text-align: center;
+}
+
+.client {
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .client {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .client__list {
