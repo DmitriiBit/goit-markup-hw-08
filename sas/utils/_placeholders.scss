@@ -1,10 +1,10 @@
 %transition{
     transition-duration: 250ms;
-    transition-timing-function: var(--time-transition-duration) 
+    transition-timing-function: var(--time-transition-duration); 
 }
 
 %button{
-    @include textFont (700px, 16px);
+    @include textFont (700, 16px);
     color: var(--primary-bg-color) ;
     background-color: var(--active-link-color) ;
     cursor: pointer;
@@ -24,7 +24,7 @@
     line-height: 1.2;
 }
 %textFont{
-    @include textFont (400px, 14px);
+    @include textFont (400, 14px);
     font-style: normal;
     line-height: 24px;
     letter-spacing: 0.03em;

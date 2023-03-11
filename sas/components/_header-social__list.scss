@@ -1,7 +1,8 @@
 .header-social__list{
-    width: 256px;
+    max-width: 256px;
     margin-right: 0;
     display: none;
+    
     @media screen and (min-width:480px) {
         display: flex;
     }
